@@ -1,13 +1,2 @@
-pragma solidity ^0.4.0
-
-contract SmartbrainUser1
-	string word=”You’re awesome”
-	function getword() public constant returns(string){
-	returns word;
-}
-	
-  Function setWord(string word) returns(string){
-  	Word=”SmartbrainUser1;
-	returns word;
-}
-}
+Project-Smartbrain
+This is a dApp which 1-5 year olds can use where they/or significant caregiver, click on the Smartbrain icon on their smartscreens, and receive a postive Smartbrain message. Repetitive use is meant to positively affirm their sense of self e.g. 'You're awesome'
