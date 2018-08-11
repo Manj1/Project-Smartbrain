@@ -1,4 +1,5 @@
 pragma solidity ^0.4.0
+
 contract SmartbrainUser1
 	string word=”You’re awesome”
 	function getword() public constant returns(string){
@@ -6,7 +7,7 @@ contract SmartbrainUser1
 }
 	
   Function setWord(string word) returns(string){
-	Word=”SmartbrainUser1;
+  	Word=”SmartbrainUser1;
 	returns word;
 }
 }
