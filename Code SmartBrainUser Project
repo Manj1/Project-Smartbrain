@@ -1,16 +1,30 @@
-pragma solidity ᴧ0.4.0
+pragma solidity ^0.4.24;
 
-contract SmartbrainUser1
-	string word=”You’re awesome”
-	fumction getword() public constant returns(string){
-	returns word;
-
+contract SmartbrainUser1 {
+    
+    string word = "You're brilliant"; 
+    address issuer;
+    
+    
+   function  SmartbrainUser1 (){  
+	issuer = msg.sender;
 }
-
-	Function setWord(string word) returns(string){
-	Word=”SmartbrainUser1;
-	returns word;
-
-
-}
+ 
+    modifier IfIssuer(){
+        if(issuer != msg.sender){
+	     throw;
+	    }
+	    else{
+          _;
+        }
+    }
+    
+    function getWord()constant returns(string){
+    return word; 
+    }
+     
+    function setWord(string newWord) IfIssuer returns(string){
+	word = newWord;
+	return "This is the creator!";
+  }
 }
