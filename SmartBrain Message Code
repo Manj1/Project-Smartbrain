@@ -1,0 +1,16 @@
+pragma solidity ^0.4.0;
+    
+    contract SmartBrainMessage {
+	address issuer = msg.sender;
+     string word = "Just know you are awesome";
+     function getString() public constant returns(string){
+	  return word; 
+     }
+	
+	function SmartBrainMessage() public {
+		}
+	function setString() returns(string){
+	 word="Just know you are awesome!";
+ }
+    }
+
